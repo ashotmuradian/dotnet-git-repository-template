@@ -1,0 +1,21 @@
+<Project>
+
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <!-- https://github.com/dotnet/msbuild -->
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <EmbedAllSources>true</EmbedAllSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+
+  <!--
+  <ItemGroup>
+    <InternalsVisibleTo Include="" />
+  </ItemGroup>
+  -->
+
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+          Condition="Exists($([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')))" />
+
+</Project>

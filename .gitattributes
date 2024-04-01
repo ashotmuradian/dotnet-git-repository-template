@@ -1,0 +1,34 @@
+*          text=auto
+
+*.jpg      binary
+*.png      binary
+*.gif      binary
+
+*.sh       diff=bash eol=lf
+*.cpp      diff=cpp
+*.csharp   diff=csharp
+*.css      diff=css
+*.dts      diff=dts
+*.ex       diff=elixir
+*.exs      diff=elixir
+*.f        diff=fortran
+*.f90      diff=fortran
+*.f95      diff=fortran
+*.f03      diff=fortran
+*.go       diff=golang
+*.html     diff=html
+*.java     diff=java
+*.kotlin   diff=kotlin
+*.md       diff=markdown
+; *.m        diff=matlab
+*.m        diff=objc
+*.pas      diff=pascal
+*.pl       diff=perl
+*.php      diff=php
+*.py       diff=python
+*.rb       diff=ruby
+*.rs       diff=rust
+*.tex      diff=tex
+
+*.pdf   diff=astextplain
+*.PDF   diff=astextplain

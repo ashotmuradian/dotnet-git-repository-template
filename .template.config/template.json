@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Ashot Muradian",
+  "classifications": [
+    "Solution"
+  ],
+  "identity": "DotnetGitRepositoryTemplate",
+  "groupIdentity": "DotnetGitRepositoryTemplate",
+  "name": "Solution Repository",
+  "description": "Solution Repository",
+  "shortName": "repo",
+  "sourceName": "Solution.1",
+  "tags": {
+    "language": "C#",
+    "type": "solution",
+    "editorTreatAs": "solution"
+  },
+  "preferNameDirectory": true,
+  "primaryOutputs": [
+    {
+      "path": "Solution.1.sln"
+    },
+    {
+      "path": "README.md"
+    },
+    {
+      "path": ".idea/.idea.Solution.1/.idea/.gitignore"
+    },
+    {
+      "path": ".idea/.idea.dotnet-git-repository-template.dir/.idea/.gitignore"
+    }
+  ],
+  "sources": [
+    {
+      "exclude": [
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        ".template.config/**/*",
+        "**/*.filelist",
+        "**/*.user",
+        "**/*.lock.json",
+        ".git/**",
+        "*.sln.iml",
+        "riderModule.iml",
+        "/_ReSharper.Caches/",
+        "**/.idea/workspace.xml",
+        "**/.idea/usage.statistics.xml",
+        "**/.idea/shelf",
+        "**/.idea/httpRequests",
+        "**/.idea.*/Docker"
+      ],
+      "rename": {
+        ".idea.dotnet-git-repository-template.dir": ".idea.Solution.1"
+      }
+    }
+  ],
+  "guids": [
+    "787A5C56-D079-4A46-83FC-32566CA93927",
+    "34C61088-1FB9-466B-B342-B97A0A93EA88",
+    "A1F3A09B-B56F-4063-ACD8-9DCEAE1CD172",
+    "3820718B-DF2A-4E35-AE7E-18E4628BDFAC",
+    "CDA1F63F-955A-410D-8478-6E7206798453",
+    "4277C240-9037-4AB6-AD8F-C7697788791F"
+  ],
+  "symbols": {
+    "indentation-style": {
+      "type": "parameter",
+      "datatype": "choice",
+      "defaultValue": "k-and-r",
+      "description": "Indentation style",
+      "isRequired": false,
+      "enableQuotelessLiterals": true,
+      "choices": [
+        {
+          "choice": "k-and-r",
+          "description": "Kernighan & Ritchie (K&R)",
+          "displayName": "Kernighan & Ritchie (K&R)"
+        },
+        {
+          "choice": "allman",
+          "description": "Allman",
+          "displayName": "Allman"
+        }
+      ]
+    }
+  }
+}
