@@ -18,7 +18,7 @@
   "preferNameDirectory": true,
   "primaryOutputs": [
     {
-      "path": "Solution.1.sln"
+      "path": "Solution.1.slnx"
     },
     {
       "path": "README.md"
